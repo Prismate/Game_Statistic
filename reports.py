@@ -73,12 +73,11 @@ def get_genres(file_name):
     lines = file.readlines()
     genres = list(set( row[4] for row in lines))
     print(genres)
-
-    pass
-
     return bubble_sort(genres)
 
+
 print(get_genres("game_stat.txt"))
+
 
 def when_was_top_sold_fps(file_name):
     max_copies = 0
